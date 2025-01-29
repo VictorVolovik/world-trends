@@ -65,12 +65,12 @@
     <header>
       <nav class="main-nav">
         <a class="logo focusable" href="/">
+          <h1 class="logo__heading visually-hidden">World Trends</h1>
           <img
             class="logo__img"
             src="./assets/Logotype.svg"
-            alt="World Trends logo"
+            aria-hidden="true"
           />
-          <h1 class="logo__heading">World Trends</h1>
         </a>
 
         <ul class="main-nav__links">
@@ -81,8 +81,10 @@
             <a
               class="main-nav__link main-nav__link--active focusable"
               href="./charts.html"
-              >Charts</a
+              aria-current="page"
             >
+              Charts
+            </a>
           </li>
         </ul>
       </nav>
