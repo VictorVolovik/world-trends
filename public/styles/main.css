@@ -1,3 +1,17 @@
+:root {
+  --mobile-margin: 15px;
+  --desktop-margin: 30px;
+  --max-content-width: 1440px;
+
+  --text-primary-color: rgb(25, 25, 25);
+  --text-secondary-color: rgb(89, 89, 89);
+  --text-reverse-color: rgb(253, 253, 253);
+
+  --light-bg-color: rgb(237, 237, 237);
+}
+
+/* Defaults */
+
 html {
   box-sizing: border-box;
 }
@@ -9,5 +23,107 @@ html {
 }
 
 body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+.focusable:focus,
+.focusable:focus-visible {
+  outline: 2px solid #ffcc00;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.focusable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Header */
+
+header {
+  margin: 0 auto;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--mobile-margin);
+  margin: var(--mobile-margin);
+}
+
+.logo {
+  display: inline-block;
+}
+
+.main-nav__links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__link {
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: var(--light-bg-color);
+  color: var(--text-secondary-color);
+  border: 1px solid var(--light-bg-color);
+  font-size: 18px;
+}
+
+.main-nav__link:hover {
+  color: var(--text-primary-color);
+}
+
+.main-nav__link--active {
+  color: var(--text-primary-color);
+  border-color: var(--text-primary-color);
+}
+
+.logo__heading {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  header {
+    max-width: var(--max-content-width);
+  }
+  .main-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--desktop-margin);
+  }
+}
+
+/* Content */
+
+main {
+  margin: 0 auto;
+}
+
+.content {
+  margin: var(--mobile-margin);
+}
+
+@media (min-width: 640px) {
+  main {
+    max-width: var(--max-content-width);
+  }
+  .content {
+    margin: var(--desktop-margin);
+  }
 }
