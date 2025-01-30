@@ -122,10 +122,15 @@
             class="highlight__more focusable"
           >
             Explore
-            <img class="highlight__more-icon" src="./assets/IconArrowRightWhite.svg" aria-hidden="true" />
+            <img
+              class="highlight__more-icon"
+              src="./assets/IconArrowRightWhite.svg"
+              aria-hidden="true"
+            />
           </a>
         </div>
 
+        <!-- Top Picks -->
         <div class="top-picks">
           <ul class="top-picks__list">
             <li class="top-picks__list-item">
@@ -229,6 +234,7 @@
             </li>
           </ul>
         </div>
+        <!-- Top Picks End -->
 
         <!-- Articles -->
         <div class="articles">
@@ -482,8 +488,39 @@
                 </div>
               </a>
             </li>
+
+            <template id="article-template">
+              <li class="articles__list-item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="articles__list-item-link article__link focusable"
+                >
+                  <img
+                    class="articles__list-item-image article__image"
+                    src=""
+                    alt=""
+                  />
+                  <h3 class="articles__list-item-heading article__heading"></h3>
+                  <p class="articles__list-item-summary article__summary"></p>
+                  <div class="articles__list-item-info article__info">
+                    <span class="article__info-date"></span>
+                    |
+                    <span class="article__info-tag"></span>
+                  </div>
+                </a>
+              </li>
+            </template>
           </ul>
+
+          <div class="read-more">
+            <button class="read-more__button focusable">
+              Read more
+            </button>
+          </div>
         </div>
+        <!-- Articles End -->
       </div>
     </main>
   </body>
