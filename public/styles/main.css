@@ -8,6 +8,9 @@
   --text-reverse-color: rgb(253, 253, 253);
 
   --light-bg-color: rgb(237, 237, 237);
+
+  --br-small: 8px;
+  --br-large: 16px;
 }
 
 /* Defaults */
@@ -39,7 +42,7 @@ a {
 .focusable:focus-visible {
   outline: 2px solid #ffcc00;
   outline-offset: 2px;
-  border-radius: 4px;
+  border-radius: var(--br-small);
 }
 
 .focusable:focus:not(:focus-visible) {
@@ -73,6 +76,8 @@ header {
 
 .logo {
   display: inline-block;
+  height: 32px;
+  width: fit-content;
 }
 
 .main-nav__links {
@@ -86,11 +91,10 @@ header {
 
 .main-nav__link {
   display: flex;
-  height: 30px;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 10px 20px;
+  border-radius: var(--br-small);
   background-color: var(--light-bg-color);
   color: var(--text-secondary-color);
   border: 1px solid var(--light-bg-color);

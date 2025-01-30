@@ -1,0 +1,67 @@
+/* News Layout */
+
+/* Highlight */
+
+.highlight {
+  margin-top: 30px;
+}
+
+.highlight__link {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.highlight__link.focusable {
+  border-radius: var(--br-large);
+}
+
+.highlight__article {
+  position: relative;
+  height: 240px;
+  width: 100%;
+}
+
+.highlight__article::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  border-radius: var(--br-large);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+}
+
+.highlight__article-image {
+  height: 100%;
+  width: 100%;
+  border-radius: var(--br-large);
+  object-fit: cover;
+}
+
+.highlight__article-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 15px;
+  color: var(--text-reverse-color);
+  z-index: 1;
+}
+
+.highlight__more {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: fit-content;
+  padding: 10px;
+  background-color: var(--text-primary-color);
+  color: var(--text-reverse-color);
+  border-radius: var(--br-small);
+}
+
+/* Top Pick */
+
+/* Articles */
