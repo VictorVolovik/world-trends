@@ -1,5 +1,45 @@
 /* News Layout */
 
+/* Article */
+
+.article__image {
+  height: 100%;
+  width: 100%;
+  border-radius: var(--br-large);
+  object-fit: cover;
+}
+
+.article__heading {
+  display: -webkit-box;
+  margin: 0 0 5px 0;
+  max-height: 48px;
+  font-size: 20px;
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.article__summary {
+  display: -webkit-box;
+  margin: 0 0 5px 0;
+  max-height: 40px;
+  font-size: 16px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: var(--text-secondary-color);
+}
+
+.article__info {
+  display: flex;
+  gap: 10px;
+  color: var(--text-ligth-color);
+}
+
 /* Highlight */
 
 .highlight {
@@ -8,6 +48,7 @@
 
 .highlight__link {
   display: inline-block;
+  width: 100%;
   margin-bottom: 10px;
 }
 
@@ -18,7 +59,6 @@
 .highlight__article {
   position: relative;
   height: 240px;
-  width: 100%;
 }
 
 .highlight__article::after {
@@ -31,13 +71,6 @@
   height: 100%;
   border-radius: var(--br-large);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
-}
-
-.highlight__article-image {
-  height: 100%;
-  width: 100%;
-  border-radius: var(--br-large);
-  object-fit: cover;
 }
 
 .highlight__article-text {
@@ -64,6 +97,11 @@
   border-radius: var(--br-small);
 }
 
+.highlight__more-icon {
+  height: 20px;
+  width: 20px;
+}
+
 /* Top Picks */
 
 .top-picks {
@@ -81,18 +119,6 @@
   margin: 0;
 }
 
-.top-picks__list-item-heading {
-  display: -webkit-box;
-  margin: 0 0 5px 0;
-  max-height: 48px;
-  font-size: 20px;
-  line-height: 24px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-}
-
 .top-picks__list-item-text {
   display: -webkit-box;
   margin: 0 0 5px 0;
@@ -106,10 +132,30 @@
   color: var(--text-secondary-color);
 }
 
-.top-picks__list-item-info {
-  display: flex;
-  gap: 10px;
-  color: var(--text-ligth-color);
+/* Articles */
+
+.articles {
+  margin-top: 30px;
 }
 
-/* Articles */
+.articles__heading {
+  margin: 15px 0;
+}
+
+.articles__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.articles__list-item-image {
+  height: 240px;
+  margin-bottom: 5px;
+}
+
+.articles__list-item-heading {
+  -webkit-line-clamp: 2;
+}
