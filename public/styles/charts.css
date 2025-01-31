@@ -43,7 +43,6 @@
 
 .chart-selectors {
   display: flex;
-  justify-content: center;
   gap: 15px;
   margin: 30px auto;
 }
@@ -98,6 +97,9 @@
 }
 
 @media (min-width: 1024px) {
+  .chart-selectors {
+    justify-content: center;
+  }
   .chart-block {
     padding: 30px;
     height: 720px;
