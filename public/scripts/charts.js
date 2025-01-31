@@ -396,7 +396,7 @@ function renderSelectors(charts) {
 
   Object.keys(charts).forEach((key, idx) => {
     const selector = document.createElement("button");
-    selector.classList.add("chart-selectors__item");
+    selector.classList.add("chart-selectors__item", "focusable");
     selector.setAttribute("data-selector", key);
     selector.textContent = key;
     if (idx === 0) {
