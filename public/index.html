@@ -21,7 +21,10 @@
       property="og:description"
       content="Stay updated with the latest news, trends, and events from around the world. Your source for daily news in politics, entertainment, sports, and more."
     />
-    <meta property="og:image" content="https://world-trends.onrender.com/images/social-image.jpg" />
+    <meta
+      property="og:image"
+      content="https://world-trends.onrender.com/images/social-image.jpg"
+    />
     <meta property="og:url" content="https://world-trends.onrender.com/" />
     <meta property="og:type" content="website" />
 
@@ -516,30 +519,6 @@
                 </div>
               </a>
             </li>
-
-            <template id="article-template">
-              <li class="articles__list-item">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="articles__list-item-link article__link focusable"
-                >
-                  <img
-                    class="articles__list-item-image article__image"
-                    src=""
-                    alt=""
-                  />
-                  <h3 class="articles__list-item-heading article__heading"></h3>
-                  <p class="articles__list-item-summary article__summary"></p>
-                  <div class="articles__list-item-info article__info">
-                    <span class="article__info-date"></span>
-                    |
-                    <span class="article__info-tag"></span>
-                  </div>
-                </a>
-              </li>
-            </template>
           </ul>
 
           <div class="read-more">
@@ -547,6 +526,30 @@
           </div>
         </div>
         <!-- Articles End -->
+
+        <template id="article-template">
+          <li class="articles__list-item">
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="articles__list-item-link article__link focusable"
+            >
+              <img
+                class="articles__list-item-image article__image"
+                src=""
+                alt=""
+              />
+              <h3 class="articles__list-item-heading article__heading"></h3>
+              <p class="articles__list-item-summary article__summary"></p>
+              <div class="articles__list-item-info article__info">
+                <span class="article__info-date"></span>
+                |
+                <span class="article__info-tag"></span>
+              </div>
+            </a>
+          </li>
+        </template>
       </div>
     </main>
   </body>
