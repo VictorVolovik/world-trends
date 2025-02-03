@@ -408,7 +408,7 @@ function renderSelectors(charts) {
   selectors.appendChild(fragment);
 
   selectors.addEventListener("click", function handleSelectorsClick(e) {
-    if (e.target.tagName === "BUTTON") {
+    if (e.target.matches(".chart-selectors__item")) {
       const month = e.target.dataset.selector;
       Array.from(selectors.children).forEach((child) => {
         child.classList.remove("chart-selectors__item--active");
