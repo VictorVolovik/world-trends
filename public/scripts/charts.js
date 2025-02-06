@@ -460,6 +460,10 @@ function renderCharts(charts) {
   };
 
   myChart.setOption(option);
+
+  window.addEventListener("resize", function () {
+    myChart.resize();
+  });
 }
 
 async function getChartsData() {
