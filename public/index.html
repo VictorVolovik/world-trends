@@ -89,6 +89,12 @@
     <link rel="stylesheet" href="./styles/news.css" />
 
     <script src="./scripts/news.js" defer></script>
+
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="cc08c2c1-248c-49fa-bf8c-67c3d75d9150"
+    ></script>
   </head>
   <body>
     <header>
@@ -108,12 +114,18 @@
               class="main-nav__link main-nav__link--active focusable"
               href="./index.html"
               aria-current="page"
+              data-umami-event="News link"
             >
               News
             </a>
           </li>
           <li class="main-nav__links-item">
-            <a class="main-nav__link focusable" href="./charts.html">Charts</a>
+            <a
+              class="main-nav__link focusable"
+              href="./charts.html"
+              data-umami-event="Charts link"
+              >Charts</a
+            >
           </li>
         </ul>
       </nav>
@@ -532,7 +544,12 @@
           </ul>
 
           <div class="read-more">
-            <button class="read-more__button focusable">Read more</button>
+            <button
+              class="read-more__button focusable"
+              data-umami-event="Read more"
+            >
+              Read more
+            </button>
           </div>
         </div>
         <!-- Articles End -->
